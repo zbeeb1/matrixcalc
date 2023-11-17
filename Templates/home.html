@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #666;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            color: #666;
+            margin-top: 0;
+        }
+
+        /* Updated styling */
+
+        h1, h2 {
+            color: #336699;
+        }
+
+        input[type="submit"] {
+            background-color: #336699;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #225577;
+        }
+
+        label {
+            color: #336699;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Matrix Calculator</h1>
+        <h2>M.Zbeeb 2023 - Simple and Basic Tools MATH 218</h2>
+
+        <form action="/dim" method="post">
+            <p>Find your matrix dimensions</p>
+            <label for="matrix">Input your matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <input type="submit" value="Find Dimensions">
+        </form>
+
+        <form action="/add" method="post">
+            <p>Addition of Matrices (Note: Input two matrices of the same size)</p>
+            <label for="matrix">Input your first matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <label for="matrix2">Input your second matrix:</label>
+            <input type="text" name="matrix2" required>
+            <br>
+            <input type="submit" value="Add">
+        </form>
+
+        <form action="/sub" method="post">
+            <p>Subtraction of Matrices (Note: Input two matrices of the same size)</p>
+            <label for="matrix">Input your first matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <label for="matrix2">Input your second matrix:</label>
+            <input type="text" name="matrix2" required>
+            <br>
+            <input type="submit" value="Subtract">
+        </form>
+
+        <form action="/neg" method="post">
+            <p>Negation Tool</p>
+            <label for="matrix">Input your matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <input type="submit" value="Negate">
+        </form>
+
+        <form action="/mult" method="post">
+            <p>Multiplication of Matrices</p>
+            <label for="matrix">Input your first matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <label for="matrix2">Input your second matrix:</label>
+            <input type="text" name="matrix2" required>
+            <br>
+            <input type="submit" value="Multiply">
+        </form>
+
+        <form action="/mult1" method="post">
+            <p>Multiplication of Matrices by a Constant</p>
+            <label for="matrix">Input your matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <label for="constant">Input your constant (k):</label>
+            <input type="text" name="k" required>
+            <br>
+            <input type="submit" value="Multiply">
+        </form>
+
+        <form action="/det" method="post">
+            <p>Find the Matrix Determinant</p>
+            <label for="matrix">Input your matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <input type="submit" value="Calculate">
+        </form>
+
+        <form action="/transpose" method="post">
+            <p>Find the Transpose of the Matrix</p>
+            <label for="matrix">Input your matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <input type="submit" value="Find Transpose">
+        </form>
+
+        <form action="/trace" method="post">
+            <p>Find the Trace of the Matrix</p>
+            <label for="matrix">Input your matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <input type="submit" value="Calculate">
+        </form>
+
+        <form action="/inverse" method="post">
+            <p>Find the Inverse of the Matrix</p>
+            <label for="matrix">Input your matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <input type="submit" value="Find Inverse">
+        </form>
+
+        <form action="/solve" method="post">
+            <p>Solve Augmented Matrix</p>
+            <label for="matrix">Input your matrix:</label>
+            <input type="text" name="matrix" required>
+            <br>
+            <input type="submit" value="Solve">
+        </form>
+    </div>
+</body>
+</html>
